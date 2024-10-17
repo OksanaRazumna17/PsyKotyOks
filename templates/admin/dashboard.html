@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .statistic {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dashboard</h1>
+
+    <div class="statistic">
+        <h2>Visit Statistics</h2>
+        <p>Visit count: {{ visit_data.visit_count }}</p>
+        <p>{{ visit_data.message }}</p>
+    </div>
+
+    <div class="statistic">
+        <h2>Registration Statistics</h2>
+        <p>Registration count: {{ registration_data.registration_count }}</p>
+        <p>{{ registration_data.message }}</p>
+    </div>
+
+    <div class="statistic">
+        <h2>Questions Statistics</h2>
+        <p>Questions count: {{ questions_data.questions_count }}</p>
+        <p>{{ questions_data.message }}</p>
+    </div>
+
+    <div class="statistic">
+        <h2>Answers Statistics</h2>
+        <p>Answers count: {{ answers_data.answers_count }}</p>
+        <p>{{ answers_data.message }}</p>
+    </div>
+
+    <div class="statistic">
+        <h2>Response Time Statistics</h2>
+        <p>Average response time: {{ response_time_data.average_response_time }} seconds</p>
+        <p>{{ response_time_data.message }}</p>
+    </div>
+</body>
+</html>
